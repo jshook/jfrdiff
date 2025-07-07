@@ -1,0 +1,316 @@
+Comparing JFR files:
+  File 1: src/test/resources/profile_1751574827.jfr
+  File 2: src/test/resources/profile_1751575919.jfr
+  Threshold: 10.0%
+  Readout view: default
+  File 1 mtime: 2025-07-03T20:57:29.930562172Z
+  File 2 mtime: 2025-07-03T20:57:35.176719273Z
+  Time delta: 5.25 s (file 2 is newer)
+
+Analyzing file: src/test/resources/profile_1751574827.jfr
+
+Analyzing file: src/test/resources/profile_1751575919.jfr
+
+=== JFR Comparison Summary ===
+
+Event Type: jdk.ActiveRecording
+  Count: 3 -> 2 (-33.3%)
+  First Event: 2025-07-03T20:33:47.649441368Z -> 2025-07-03T20:51:54.393782118Z
+  Last Event: 2025-07-03T20:33:47.649441368Z -> 2025-07-03T20:51:54.393782118Z
+  Time Span (File 1): 0 ns
+  Time Span (File 2): 0 ns
+
+Event Type: jdk.EvacuationInformation
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.115525722Z -> 2025-07-03T20:51:54.996521812Z
+  Last Event: 2025-07-03T20:34:46.957644728Z -> 2025-07-03T20:52:53.989608949Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 58.99 s
+
+Event Type: jdk.ExecuteVMOperation
+  Count: 24 -> 97 (+304.2%)
+  First Event: 2025-07-03T20:33:47.645703179Z -> 2025-07-03T20:51:54.387607527Z
+  Last Event: 2025-07-03T20:34:47.645552181Z -> 2025-07-03T20:52:54.387734498Z
+  Time Span (File 1): 60.00 s
+  Time Span (File 2): 60.00 s
+  Avg Duration: 5.10 ms -> 8.60 ms
+  Min Duration: 605 ns -> 326 ns
+  Max Duration: 23.51 ms -> 40.74 ms
+
+Event Type: jdk.ExecutionSample
+  Count: 706 -> 4152 (+488.1%)
+  First Event: 2025-07-03T20:33:47.648497448Z -> 2025-07-03T20:51:54.392389587Z
+  Last Event: 2025-07-03T20:34:47.644685565Z -> 2025-07-03T20:52:54.365080529Z
+  Time Span (File 1): 60.00 s
+  Time Span (File 2): 59.97 s
+  Stack Traces: 706 -> 4152 (+488.1%)
+
+Event Type: jdk.FileRead
+  Count: 78 -> 0 (-100.0%)
+  Avg Duration: 648.34 ms -> 0 ns
+  Stack Traces: 78 -> 0 (-100.0%)
+
+Event Type: jdk.G1AdaptiveIHOP
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.115481Z -> 2025-07-03T20:51:54.996480301Z
+  Last Event: 2025-07-03T20:34:46.957618352Z -> 2025-07-03T20:52:53.989569479Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 58.99 s
+
+Event Type: jdk.G1BasicIHOP
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.115479863Z -> 2025-07-03T20:51:54.996479412Z
+  Last Event: 2025-07-03T20:34:46.957618075Z -> 2025-07-03T20:52:53.989568558Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 58.99 s
+
+Event Type: jdk.G1EvacuationOldStatistics
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.115362451Z -> 2025-07-03T20:51:54.996376290Z
+  Last Event: 2025-07-03T20:34:46.957533314Z -> 2025-07-03T20:52:53.989447624Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 58.99 s
+
+Event Type: jdk.G1EvacuationYoungStatistics
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.115360783Z -> 2025-07-03T20:51:54.996375323Z
+  Last Event: 2025-07-03T20:34:46.957532659Z -> 2025-07-03T20:52:53.989446721Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 58.99 s
+
+Event Type: jdk.G1GarbageCollection
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.104123449Z -> 2025-07-03T20:51:54.985468363Z
+  Last Event: 2025-07-03T20:34:46.952616158Z -> 2025-07-03T20:52:53.977960647Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 58.99 s
+  Avg Duration: 9.74 ms -> 13.35 ms
+  Min Duration: 4.87 ms -> 6.89 ms
+  Max Duration: 23.38 ms -> 29.09 ms
+
+Event Type: jdk.G1HeapSummary
+  Count: 28 -> 144 (+414.3%)
+  First Event: 2025-07-03T20:33:57.104124964Z -> 2025-07-03T20:51:54.985469753Z
+  Last Event: 2025-07-03T20:34:46.957646040Z -> 2025-07-03T20:52:54.007576256Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.02 s
+
+Event Type: jdk.G1MMU
+  Count: 17 -> 90 (+429.4%)
+  First Event: 2025-07-03T20:33:57.115462121Z -> 2025-07-03T20:51:54.996461884Z
+  Last Event: 2025-07-03T20:34:46.957606393Z -> 2025-07-03T20:52:54.006076871Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 59.01 s
+
+Event Type: jdk.GCCPUTime
+  Count: 17 -> 90 (+429.4%)
+  First Event: 2025-07-03T20:33:57.115574695Z -> 2025-07-03T20:51:54.996555052Z
+  Last Event: 2025-07-03T20:34:46.957670007Z -> 2025-07-03T20:52:54.006091443Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 59.01 s
+
+Event Type: jdk.GCHeapSummary
+  Count: 28 -> 144 (+414.3%)
+  First Event: 2025-07-03T20:33:57.104124484Z -> 2025-07-03T20:51:54.985469506Z
+  Last Event: 2025-07-03T20:34:46.957645862Z -> 2025-07-03T20:52:54.007575960Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.02 s
+
+Event Type: jdk.GCPhaseConcurrent
+  Count: 18 -> 108 (+500.0%)
+  First Event: 2025-07-03T20:33:58.929577269Z -> 2025-07-03T20:51:58.023544145Z
+  Last Event: 2025-07-03T20:34:45.765913379Z -> 2025-07-03T20:52:54.006110692Z
+  Time Span (File 1): 46.84 s
+  Time Span (File 2): 55.98 s
+  Avg Duration: 1.89 ms -> 2.18 ms
+  Min Duration: 8.81 µs -> 8.63 µs
+  Max Duration: 6.92 ms -> 8.20 ms
+
+Event Type: jdk.GCPhaseConcurrentLevel1
+  Count: 12 -> 72 (+500.0%)
+  First Event: 2025-07-03T20:33:58.935769401Z -> 2025-07-03T20:51:58.031103864Z
+  Last Event: 2025-07-03T20:34:45.760627837Z -> 2025-07-03T20:52:53.998128324Z
+  Time Span (File 1): 46.82 s
+  Time Span (File 2): 55.97 s
+  Avg Duration: 11.56 µs -> 9.59 µs
+  Min Duration: 548 ns -> 610 ns
+  Max Duration: 58.79 µs -> 52.74 µs
+
+Event Type: jdk.GCPhaseParallel
+  Count: 37674 -> 205002 (+444.1%)
+  First Event: 2025-07-03T20:33:57.104172801Z -> 2025-07-03T20:51:54.985517572Z
+  Last Event: 2025-07-03T20:34:46.957509572Z -> 2025-07-03T20:52:53.989429249Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.00 s
+  Avg Duration: 269.12 µs -> 351.59 µs
+  Min Duration: 19 ns -> 19 ns
+  Max Duration: 16.42 ms -> 21.96 ms
+
+Event Type: jdk.GCPhasePause
+  Count: 17 -> 90 (+429.4%)
+  First Event: 2025-07-03T20:33:57.104123449Z -> 2025-07-03T20:51:54.985468363Z
+  Last Event: 2025-07-03T20:34:46.952616158Z -> 2025-07-03T20:52:54.006048676Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.02 s
+  Avg Duration: 6.89 ms -> 9.17 ms
+  Min Duration: 12.83 µs -> 15.82 µs
+  Max Duration: 23.38 ms -> 40.70 ms
+
+Event Type: jdk.GCPhasePauseLevel1
+  Count: 60 -> 324 (+440.0%)
+  First Event: 2025-07-03T20:33:57.112762934Z -> 2025-07-03T20:51:54.994243681Z
+  Last Event: 2025-07-03T20:34:46.956545175Z -> 2025-07-03T20:52:54.006071808Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 59.01 s
+  Avg Duration: 411.68 µs -> 566.07 µs
+  Min Duration: 61 ns -> 72 ns
+  Max Duration: 2.51 ms -> 38.12 ms
+
+Event Type: jdk.GCPhasePauseLevel2
+  Count: 41 -> 234 (+470.7%)
+  First Event: 2025-07-03T20:33:57.113289195Z -> 2025-07-03T20:51:54.994760121Z
+  Last Event: 2025-07-03T20:34:46.956056765Z -> 2025-07-03T20:52:54.000669187Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 59.01 s
+  Avg Duration: 68.10 µs -> 256.50 µs
+  Min Duration: 82 ns -> 73 ns
+  Max Duration: 629.76 µs -> 37.77 ms
+
+Event Type: jdk.GCReferenceStatistics
+  Count: 56 -> 288 (+414.3%)
+  First Event: 2025-07-03T20:33:57.114311054Z -> 2025-07-03T20:51:54.995330927Z
+  Last Event: 2025-07-03T20:34:46.956545818Z -> 2025-07-03T20:52:53.999305317Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 59.00 s
+
+Event Type: jdk.GarbageCollection
+  Count: 14 -> 72 (+414.3%)
+  First Event: 2025-07-03T20:33:57.104123449Z -> 2025-07-03T20:51:54.985468363Z
+  Last Event: 2025-07-03T20:34:46.952616158Z -> 2025-07-03T20:52:53.989641397Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.00 s
+  Avg Duration: 10.84 ms -> 14.84 ms
+  Min Duration: 4.87 ms -> 6.89 ms
+  Max Duration: 23.38 ms -> 53.65 ms
+
+Event Type: jdk.JavaMonitorWait
+  Count: 15 -> 66 (+340.0%)
+  First Event: 2025-07-03T20:33:16.385474853Z -> 2025-07-03T20:49:20.174874965Z
+  Last Event: 2025-07-03T20:34:45.753912199Z -> 2025-07-03T20:52:53.040643712Z
+  Time Span (File 1): 89.37 s
+  Time Span (File 2): 212.87 s
+  Avg Duration: 14.65 s -> 5.00 s
+  Min Duration: 388.96 ms -> 93.57 ms
+  Max Duration: 60.00 s -> 154.22 s
+  Stack Traces: 15 -> 66 (+340.0%)
+
+Event Type: jdk.MetaspaceChunkFreeListSummary
+  Count: 56 -> 288 (+414.3%)
+  First Event: 2025-07-03T20:33:57.104126571Z -> 2025-07-03T20:51:54.985470979Z
+  Last Event: 2025-07-03T20:34:46.957646737Z -> 2025-07-03T20:52:54.007577127Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.02 s
+
+Event Type: jdk.MetaspaceGCThreshold
+  Count: 0 -> 1 (+100.0%)
+
+Event Type: jdk.MetaspaceSummary
+  Count: 28 -> 144 (+414.3%)
+  First Event: 2025-07-03T20:33:57.104126172Z -> 2025-07-03T20:51:54.985470326Z
+  Last Event: 2025-07-03T20:34:46.957646326Z -> 2025-07-03T20:52:54.007576622Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.02 s
+
+Event Type: jdk.NativeMethodSample
+  Count: 2553 -> 438 (-82.8%)
+  First Event: 2025-07-03T20:33:47.665680510Z -> 2025-07-03T20:51:54.543250491Z
+  Last Event: 2025-07-03T20:34:47.629508762Z -> 2025-07-03T20:52:54.331641435Z
+  Time Span (File 1): 59.96 s
+  Time Span (File 2): 59.79 s
+  Stack Traces: 2553 -> 438 (-82.8%)
+
+Event Type: jdk.ObjectAllocationSample
+  Count: 4555 -> 17063 (+274.6%)
+  First Event: 2025-07-03T20:33:47.647956408Z -> 2025-07-03T20:51:54.394870467Z
+  Last Event: 2025-07-03T20:34:47.648487329Z -> 2025-07-03T20:52:54.389342452Z
+  Time Span (File 1): 60.00 s
+  Time Span (File 2): 59.99 s
+  Stack Traces: 4554 -> 17062 (+274.7%)
+
+Event Type: jdk.OldGarbageCollection
+  Count: 3 -> 18 (+500.0%)
+  First Event: 2025-07-03T20:33:58.929573384Z -> 2025-07-03T20:51:58.023540029Z
+  Last Event: 2025-07-03T20:34:45.753795747Z -> 2025-07-03T20:52:53.989641397Z
+  Time Span (File 1): 46.82 s
+  Time Span (File 2): 55.97 s
+  Avg Duration: 14.88 ms -> 19.31 ms
+  Min Duration: 12.45 ms -> 15.59 ms
+  Max Duration: 19.56 ms -> 53.65 ms
+
+Event Type: jdk.OldObjectSample
+  Count: 97 -> 191 (+96.9%)
+  First Event: 2025-07-03T20:34:47.645387961Z -> 2025-07-03T20:52:54.387542164Z
+  Last Event: 2025-07-03T20:34:47.645387961Z -> 2025-07-03T20:52:54.387542164Z
+  Time Span (File 1): 0 ns
+  Time Span (File 2): 0 ns
+  Stack Traces: 96 -> 191 (+99.0%)
+
+Event Type: jdk.PromoteObjectInNewPLAB
+  Count: 9953 -> 59550 (+498.3%)
+  First Event: 2025-07-03T20:33:57.105178272Z -> 2025-07-03T20:51:54.986518024Z
+  Last Event: 2025-07-03T20:34:46.956122460Z -> 2025-07-03T20:52:53.987456332Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.00 s
+
+Event Type: jdk.PromoteObjectOutsidePLAB
+  Count: 1680 -> 14594 (+768.7%)
+  First Event: 2025-07-03T20:33:57.105680942Z -> 2025-07-03T20:51:54.987137442Z
+  Last Event: 2025-07-03T20:34:46.954407373Z -> 2025-07-03T20:52:53.982801621Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 59.00 s
+
+Event Type: jdk.SafepointBegin
+  Count: 22 -> 95 (+331.8%)
+  First Event: 2025-07-03T20:33:47.649662059Z -> 2025-07-03T20:51:54.395676316Z
+  Last Event: 2025-07-03T20:34:47.648825379Z -> 2025-07-03T20:52:54.390638421Z
+  Time Span (File 1): 60.00 s
+  Time Span (File 2): 59.99 s
+  Avg Duration: 27.76 µs -> 67.48 µs
+  Min Duration: 12.49 µs -> 7.44 µs
+  Max Duration: 63.62 µs -> 767.68 µs
+
+Event Type: jdk.TenuringDistribution
+  Count: 165 -> 810 (+390.9%)
+  First Event: 2025-07-03T20:33:57.115509689Z -> 2025-07-03T20:51:54.996506578Z
+  Last Event: 2025-07-03T20:34:46.957638296Z -> 2025-07-03T20:52:53.989599817Z
+  Time Span (File 1): 49.84 s
+  Time Span (File 2): 58.99 s
+
+Event Type: jdk.ThreadCPULoad
+  Count: 654 -> 1169 (+78.7%)
+  First Event: 2025-07-03T20:33:52.481794302Z -> 2025-07-03T20:51:59.563167701Z
+  Last Event: 2025-07-03T20:34:42.562536579Z -> 2025-07-03T20:52:53.704359542Z
+  Time Span (File 1): 50.08 s
+  Time Span (File 2): 54.14 s
+
+Event Type: jdk.ThreadPark
+  Count: 118182 -> 132071 (+11.8%)
+  First Event: 2025-07-03T20:33:41.421743573Z -> 2025-07-03T20:51:46.257152811Z
+  Last Event: 2025-07-03T20:34:47.598082281Z -> 2025-07-03T20:52:54.331074416Z
+  Time Span (File 1): 66.18 s
+  Time Span (File 2): 68.07 s
+  Avg Duration: 84.52 ms -> 14.98 ms
+  Min Duration: 10.00 ms -> 10.00 ms
+  Max Duration: 10.00 s -> 10.00 s
+  Stack Traces: 118182 -> 132071 (+11.8%)
+
+Event Type: jdk.YoungGarbageCollection
+  Count: 11 -> 54 (+390.9%)
+  First Event: 2025-07-03T20:33:57.104123449Z -> 2025-07-03T20:51:54.985468363Z
+  Last Event: 2025-07-03T20:34:46.952616158Z -> 2025-07-03T20:52:53.977960647Z
+  Time Span (File 1): 49.85 s
+  Time Span (File 2): 58.99 s
+  Avg Duration: 9.74 ms -> 13.35 ms
+  Min Duration: 4.87 ms -> 6.89 ms
+  Max Duration: 23.38 ms -> 29.09 ms
+
