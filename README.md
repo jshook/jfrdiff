@@ -2,6 +2,11 @@
 
 JFRDiff is a command-line tool that compares two Java Flight Recorder (JFR) files and summarizes the key differences between them. This helps in analyzing performance changes between different runs or configurations of a Java application.
 
+There are many tools in the Java ecosystem which claim to be "JFR" tools, but which come with a 
+lot of bloat. JFRDiff is a simple tool with a very specific purpose. It is designed to be a pure 
+Java JFR diff tool with no external dependencies. It is designed to be a simple and efficient 
+way to compare JFR files and see deltas from one to another. That is all.
+
 ## Features
 
 - Compare event counts, durations, and stack traces between two JFR files
